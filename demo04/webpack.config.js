@@ -7,7 +7,8 @@ module.exports = {
     rules:[
       {
         test: /\.css$/,
-        use: [ 'style-loader', 'css-loader' ]
+        // First is CSS-loader to read CSS file,another one is Style-loader to insert <style> tag into HTML page.
+        use: [ 'style-loader', 'css-loader' ] 
       },
     ]
   }

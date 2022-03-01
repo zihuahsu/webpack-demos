@@ -6,7 +6,9 @@ module.exports = {
   output: {
     filename: 'bundle.js'
   },
+  // 通过插件系统扩展功能
+  // todo: 没测试成功。。。后面再看看
   plugins: [
-    new UglifyJsPlugin()
+    new UglifyJsPlugin() //  UglifyJs Plugin will minify output(bundle.js) JS codes
   ]
 };
